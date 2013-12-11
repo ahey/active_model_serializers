@@ -157,7 +157,7 @@ end
     end
 
     def serialize(association, object)
-      association.build_serializer(object, scope: scope).serializable_object
+      association.build_serializer(object, @options).serializable_object
     end
 
     def serialize_ids(association)
